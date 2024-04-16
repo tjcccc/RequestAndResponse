@@ -17,6 +17,10 @@ public:
     RequestAndResponse(QWidget *parent = nullptr);
     ~RequestAndResponse();
 
+private slots:
+    void on_methodTypeComboBox_currentIndexChanged(int index);
+    void on_uriLineEdit_textChanged(const QString &arg1);
+
 private:
     Ui::RequestAndResponse *ui;
 };
